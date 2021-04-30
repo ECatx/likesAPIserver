@@ -15,9 +15,11 @@ const createTables = async () => {
       table.increments('id').primary()
       table.string('objectId')
       table.string('userId')
-      table.timestamp()
+      table.timestamps()
     })
   }
 }
 
 createTables()
+
+export default db
